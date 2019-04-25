@@ -17,7 +17,25 @@ namespace Codility.Solutions.PrimeAndCompositeNumbers
                     allPeeks.Add(i);
             }
 
-            
+            for (int flags = 2; flags < allPeeks.Count; flags++)
+            {
+                int count = flags - 1;
+                int lastFlagIndex = 0;
+                for (int j = 1; j < allPeeks.Count && count > 0; j++)
+                {
+                    int diff = Math.Abs(allPeeks[lastFlagIndex] - allPeeks[j]);
+                    if (diff >= flags)
+                    {
+                        lastFlagIndex = j;
+                        count--;
+                    }
+                }
+
+                if(count == 0)
+                {
+                    maxFlags = Math.Max(maxFlags, flags);
+                }
+            }
 
             return maxFlags;
         }
