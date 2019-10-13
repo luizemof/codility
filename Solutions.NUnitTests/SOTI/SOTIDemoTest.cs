@@ -1,7 +1,7 @@
 using NUnit.Framework;
-using Solutions.SOTI.Test;
+using Solutions.NetCore.SOTI.Test;
 
-namespace Tests
+namespace Tests.SOTI
 {
     [TestFixture]
     public class SOTIDemoTest
@@ -11,7 +11,7 @@ namespace Tests
         [TestCase(new int[] { -1, -3 }, ExpectedResult = 1)]
         public int Basic(int[] A)
         {
-            return new SOTIDemoTask().Solution(A);
+            return new SOTIDemoTask().Task1(A);
         }
     }
 }
