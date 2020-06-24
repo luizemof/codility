@@ -1,12 +1,12 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Codility.Solutions.MaximumSliceProblem;
+using NUnit.Framework;
 
 namespace Solutions.Tests.MaximumSliceProblem
 {
-    [TestClass]
+    [TestFixture]
     public class MaxDoubleSliceSumTests
     {
-        [TestMethod]
+        [TestCase]
         public void Basic()
         {
             // Arrange

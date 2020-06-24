@@ -1,5 +1,5 @@
 using NUnit.Framework;
-using Solutions.NetCore.SOTI.Test;
+using Solutions.SOTI.Test;
 
 namespace Tests.SOTI
 {

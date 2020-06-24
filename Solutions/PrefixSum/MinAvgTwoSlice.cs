@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Solutions.NetCore.PrefixSum
+namespace Solutions.PrefixSum
 {
     public static class MinAvgTwoSlice
     {

@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using Solutions.NetCore.PrefixSum;
+using Solutions.PrefixSum;
 
 namespace Solutions.NUnitTests.PrefixSum
 {

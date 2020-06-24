@@ -1,13 +1,13 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Codility.Solutions.PrimeAndCompositeNumbers;
+using NUnit.Framework;
 
 namespace Solutions.Tests.PrimeAndCompositeNumbers
 {
-    [TestClass]
+    [TestFixture]
     public class PeaksTests
     {
 
-        [TestMethod]
+        [TestCase]
         public void Basic()
         {
             // Arrange
@@ -22,7 +22,7 @@ namespace Solutions.Tests.PrimeAndCompositeNumbers
             Assert.AreEqual(expected, result);
         }
 
-        [TestMethod]
+        [TestCase]
         public void WithPrimeNumber()
         {
             // Arrange
@@ -37,7 +37,7 @@ namespace Solutions.Tests.PrimeAndCompositeNumbers
             Assert.AreEqual(expected, result);
         }
 
-        [TestMethod]
+        [TestCase]
         public void WithoutPeek()
         {
             // Arrange
@@ -52,7 +52,7 @@ namespace Solutions.Tests.PrimeAndCompositeNumbers
             Assert.AreEqual(expected, result);
         }
 
-        [TestMethod]
+        [TestCase]
         public void WithSingleElement()
         {
             // Arrange
@@ -67,7 +67,7 @@ namespace Solutions.Tests.PrimeAndCompositeNumbers
             Assert.AreEqual(expected, result);
         }
 
-        [TestMethod]
+        [TestCase]
         public void WithZeros()
         {
             // Arrange

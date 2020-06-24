@@ -1,12 +1,12 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Codility.Solutions.MaximumSliceProblem;
+using NUnit.Framework;
 
 namespace Solutions.Tests.MaximumSliceProblem
 {
-    [TestClass]
+    [TestFixture]
     public class MaxSliceTests
     {
-        [TestMethod]
+        [TestCase]
         public void Basic()
         {
             // Arrange
@@ -21,7 +21,7 @@ namespace Solutions.Tests.MaximumSliceProblem
             Assert.AreEqual(expected, result);
         }
 
-        [TestMethod]
+        [TestCase]
         public void OneNegativeElement()
         {
             // Arrange
@@ -37,7 +37,7 @@ namespace Solutions.Tests.MaximumSliceProblem
         }
 
 
-        [TestMethod]
+        [TestCase]
         public void AllNegativeProgressive()
         {
             // Arrange

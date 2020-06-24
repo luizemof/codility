@@ -1,12 +1,12 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Codility.Solutions.PrimeAndCompositeNumbers;
+using NUnit.Framework;
 
 namespace Solutions.Tests.PrimeAndCompositeNumbers
 {
-    [TestClass]
+    [TestFixture]
     public class CountFactorsTests
     {
-        [TestMethod]
+        [TestCase]
         public void Basic()
         {
             // Arrange
@@ -21,7 +21,7 @@ namespace Solutions.Tests.PrimeAndCompositeNumbers
             Assert.AreEqual(expected, result);
         }
 
-        [TestMethod]
+        [TestCase]
         public void LargestValuePrime()
         {
             // Arrange
@@ -36,7 +36,7 @@ namespace Solutions.Tests.PrimeAndCompositeNumbers
             Assert.AreEqual(expected, result);
         }
 
-        [TestMethod]
+        [TestCase]
         public void LargestValue()
         {
             // Arrange
@@ -51,7 +51,7 @@ namespace Solutions.Tests.PrimeAndCompositeNumbers
             Assert.AreEqual(expected, result);
         }
 
-        [TestMethod]
+        [TestCase]
         public void QuadraticValue()
         {
             // Arrange
@@ -66,7 +66,7 @@ namespace Solutions.Tests.PrimeAndCompositeNumbers
             Assert.AreEqual(expected, result);
         }
 
-        [TestMethod]
+        [TestCase]
         public void QuadraticValueWithMoreThanThree()
         {
             // Arrange
@@ -81,7 +81,7 @@ namespace Solutions.Tests.PrimeAndCompositeNumbers
             Assert.AreEqual(expected, result);
         }
 
-        [TestMethod]
+        [TestCase]
         public void MinValue()
         {
             // Arrange

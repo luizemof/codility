@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace Solutions.NetCore.SOTI.Test
+namespace Solutions.SOTI.Test
 {
     public class SOTIDemoTask
     {
